@@ -1,0 +1,816 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : Modular_Inverse
+Version: K-2015.06
+Date   : Sat Oct 21 05:40:27 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: i_p[81] (input port clocked by CLK)
+  Endpoint: x_reg[255] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[81] (in)                                            0.08       3.08 r
+  r123/B[81] (Modular_Inverse_DW01_add_5)                 0.00       3.08 r
+  r123/U1530/Y (OR2X12M)                                  0.24       3.32 r
+  r123/U1356/Y (CLKNAND2X16M)                             0.14       3.46 f
+  r123/U1395/Y (NAND3X12M)                                0.13       3.59 r
+  r123/U1714/Y (AOI21BX8M)                                0.31       3.91 f
+  r123/U1371/Y (NOR2X12M)                                 0.18       4.08 r
+  r123/U2295/Y (OAI2B1X8M)                                0.12       4.20 f
+  r123/U2012/Y (AOI21BX8M)                                0.28       4.48 r
+  r123/U1485/Y (OR2X12M)                                  0.16       4.64 r
+  r123/U672/Y (NAND2X12M)                                 0.08       4.72 f
+  r123/U671/Y (CLKAND2X16M)                               0.25       4.97 f
+  r123/U2270/Y (AOI21X8M)                                 0.28       5.24 r
+  r123/U751/Y (NOR2X12M)                                  0.10       5.34 f
+  r123/U1429/Y (OR2X12M)                                  0.18       5.52 f
+  r123/U1370/Y (NAND2X12M)                                0.11       5.63 r
+  r123/U2225/Y (NAND2X12M)                                0.11       5.74 f
+  r123/U1417/Y (NAND2X12M)                                0.15       5.89 r
+  r123/U2215/Y (BUFX32M)                                  0.18       6.07 r
+  r123/U53/Y (NAND2X12M)                                  0.10       6.17 f
+  r123/U789/Y (NAND2X12M)                                 0.22       6.39 r
+  r123/U8/Y (NAND2X4M)                                    0.21       6.60 f
+  r123/U679/Y (NAND2X12M)                                 0.20       6.80 r
+  r123/U2241/Y (AO21X8M)                                  0.25       7.05 r
+  r123/U1202/Y (XOR2X4M)                                  0.49       7.54 r
+  r123/SUM[194] (Modular_Inverse_DW01_add_5)              0.00       7.54 r
+  sub_0_root_add_115/A[194] (Modular_Inverse_DW01_sub_16)     0.00     7.54 r
+  sub_0_root_add_115/U1113/Y (NAND2BX4M)                  0.60       8.14 r
+  sub_0_root_add_115/U1348/Y (NAND4X2M)                   0.88       9.03 f
+  sub_0_root_add_115/U38/Y (INVX6M)                       0.61       9.64 r
+  sub_0_root_add_115/U940/Y (INVX2M)                      0.28       9.92 f
+  sub_0_root_add_115/U1179/Y (OR4X12M)                    0.37      10.29 f
+  sub_0_root_add_115/U104/Y (CLKINVX32M)                  0.09      10.38 r
+  sub_0_root_add_115/U91/Y (NAND2X12M)                    0.08      10.46 f
+  sub_0_root_add_115/U1346/Y (NAND4X12M)                  0.21      10.67 r
+  sub_0_root_add_115/U639/Y (OR2X12M)                     0.27      10.94 r
+  sub_0_root_add_115/U1338/Y (NAND3X12M)                  0.14      11.08 f
+  sub_0_root_add_115/U637/Y (AND3X12M)                    0.31      11.39 f
+  sub_0_root_add_115/U1199/Y (NOR2X12M)                   0.22      11.62 r
+  sub_0_root_add_115/U206/Y (INVX24M)                     0.11      11.73 f
+  sub_0_root_add_115/U1149/Y (CLKNAND2X16M)               0.09      11.82 r
+  sub_0_root_add_115/U1363/Y (AO21X8M)                    0.20      12.02 r
+  sub_0_root_add_115/U172/Y (NAND2X12M)                   0.09      12.11 f
+  sub_0_root_add_115/U163/Y (NAND2X12M)                   0.18      12.29 r
+  sub_0_root_add_115/U710/Y (NAND2X8M)                    0.13      12.43 f
+  sub_0_root_add_115/U1364/Y (NAND3X12M)                  0.19      12.62 r
+  sub_0_root_add_115/U801/Y (NAND2X12M)                   0.11      12.73 f
+  sub_0_root_add_115/U164/Y (CLKNAND2X16M)                0.10      12.83 r
+  sub_0_root_add_115/U1833/Y (XOR2X8M)                    0.17      13.01 r
+  sub_0_root_add_115/DIFF[255] (Modular_Inverse_DW01_sub_16)     0.00    13.01 r
+  U7436/Y (AO22X8M)                                       0.28      13.28 r
+  U3833/Y (INVX20M)                                       0.06      13.35 f
+  U4204/Y (NAND2X12M)                                     0.09      13.43 r
+  x_reg[255]/D (DFFHQX8M)                                 0.00      13.43 r
+  data arrival time                                                 13.43
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  x_reg[255]/CK (DFFHQX8M)                                0.00      13.50 r
+  library setup time                                     -0.07      13.43
+  data required time                                                13.43
+  --------------------------------------------------------------------------
+  data required time                                                13.43
+  data arrival time                                                -13.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[135] (input port clocked by CLK)
+  Endpoint: y_reg[223] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[135] (in)                                           0.07       3.07 r
+  r124/B[135] (Modular_Inverse_DW01_add_4)                0.00       3.07 r
+  r124/U1075/Y (OR2X2M)                                   0.80       3.87 r
+  r124/U1571/Y (NAND4X12M)                                0.37       4.24 f
+  r124/U1359/Y (NOR2X12M)                                 0.23       4.47 r
+  r124/U2154/Y (OAI2B1X8M)                                0.13       4.60 f
+  r124/U2153/Y (AOI2B1X8M)                                0.25       4.86 r
+  r124/U2150/Y (OAI21X8M)                                 0.16       5.02 f
+  r124/U125/Y (NAND2X12M)                                 0.15       5.16 r
+  r124/U1091/Y (NAND2X4M)                                 0.20       5.36 f
+  r124/U626/Y (AOI21X8M)                                  0.31       5.67 r
+  r124/U646/Y (NOR2X12M)                                  0.09       5.76 f
+  r124/U1044/Y (OA21X8M)                                  0.35       6.10 f
+  r124/U1321/Y (NAND2X12M)                                0.22       6.33 r
+  r124/U1315/Y (NAND2BX4M)                                0.19       6.52 f
+  r124/U92/Y (BUFX24M)                                    0.19       6.72 f
+  r124/U2/Y (CLKINVX32M)                                  0.05       6.77 r
+  r124/U1263/Y (OAI21X8M)                                 0.10       6.87 f
+  r124/U1265/Y (NAND2X12M)                                0.24       7.11 r
+  r124/U158/Y (NAND2X12M)                                 0.12       7.23 f
+  r124/U589/Y (NAND2X12M)                                 0.18       7.42 r
+  r124/U1266/Y (NAND2X12M)                                0.11       7.53 f
+  r124/U212/Y (CLKAND2X16M)                               0.22       7.75 f
+  r124/U752/Y (NOR2X12M)                                  0.19       7.95 r
+  r124/U733/Y (NOR2X12M)                                  0.10       8.05 f
+  r124/U751/Y (MXI2X12M)                                  0.21       8.25 f
+  r124/SUM[203] (Modular_Inverse_DW01_add_4)              0.00       8.25 f
+  sub_0_root_add_108/A[203] (Modular_Inverse_DW01_sub_17)     0.00     8.25 f
+  sub_0_root_add_108/U154/Y (NAND2BX12M)                  0.26       8.52 f
+  sub_0_root_add_108/U445/Y (INVX16M)                     0.16       8.67 r
+  sub_0_root_add_108/U2165/Y (NOR2X12M)                   0.07       8.74 f
+  sub_0_root_add_108/U2163/Y (AO21X8M)                    0.28       9.03 f
+  sub_0_root_add_108/U560/Y (OR3X12M)                     0.31       9.33 f
+  sub_0_root_add_108/U559/Y (CLKNAND2X16M)                0.08       9.42 r
+  sub_0_root_add_108/U677/Y (OR3X12M)                     0.23       9.64 r
+  sub_0_root_add_108/U77/Y (INVX24M)                      0.07       9.72 f
+  sub_0_root_add_108/U558/Y (INVX24M)                     0.13       9.84 r
+  sub_0_root_add_108/U378/Y (OR2X4M)                      0.22      10.06 r
+  sub_0_root_add_108/U1373/Y (AOI21BX8M)                  0.20      10.26 r
+  sub_0_root_add_108/U1359/Y (NAND4X12M)                  0.21      10.47 f
+  sub_0_root_add_108/U2158/Y (OR2X12M)                    0.25      10.72 f
+  sub_0_root_add_108/U1058/Y (NAND2BX12M)                 0.12      10.85 r
+  sub_0_root_add_108/U1524/Y (NAND2BX12M)                 0.15      10.99 f
+  sub_0_root_add_108/U45/Y (NAND2X12M)                    0.17      11.16 r
+  sub_0_root_add_108/U1069/Y (NAND2X12M)                  0.13      11.29 f
+  sub_0_root_add_108/U1157/Y (NAND2BX12M)                 0.15      11.45 r
+  sub_0_root_add_108/U1026/Y (NAND2BX12M)                 0.11      11.56 f
+  sub_0_root_add_108/U2151/Y (AO21X8M)                    0.29      11.85 f
+  sub_0_root_add_108/U1754/Y (NAND2X12M)                  0.12      11.97 r
+  sub_0_root_add_108/U201/Y (NAND2X12M)                   0.15      12.12 f
+  sub_0_root_add_108/U1029/Y (NAND2X12M)                  0.15      12.27 r
+  sub_0_root_add_108/U566/Y (NAND2X12M)                   0.09      12.37 f
+  sub_0_root_add_108/U1074/Y (XOR2X8M)                    0.16      12.52 f
+  sub_0_root_add_108/DIFF[223] (Modular_Inverse_DW01_sub_17)     0.00    12.52 f
+  U5525/Y (AOI222X4M)                                     0.55      13.07 r
+  U5524/Y (OAI221X4M)                                     0.36      13.44 f
+  y_reg[223]/D (DFFQX1M)                                  0.00      13.44 f
+  data arrival time                                                 13.44
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  y_reg[223]/CK (DFFQX1M)                                 0.00      13.50 r
+  library setup time                                     -0.06      13.44
+  data required time                                                13.44
+  --------------------------------------------------------------------------
+  data required time                                                13.44
+  data arrival time                                                -13.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[80] (input port clocked by CLK)
+  Endpoint: y_reg[206] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[80] (in)                                            0.07       3.07 r
+  r124/B[80] (Modular_Inverse_DW01_add_4)                 0.00       3.07 r
+  r124/U1358/Y (NAND2X12M)                                0.14       3.21 f
+  r124/U399/Y (INVX6M)                                    0.19       3.40 r
+  r124/U602/Y (CLKNAND2X16M)                              0.14       3.53 f
+  r124/U2232/Y (NAND3X12M)                                0.13       3.66 r
+  r124/U2231/Y (AOI21BX8M)                                0.30       3.96 f
+  r124/U206/Y (NOR2X12M)                                  0.17       4.13 r
+  r124/U2230/Y (OAI2B1X8M)                                0.13       4.26 f
+  r124/U2229/Y (AOI2B1X8M)                                0.23       4.49 r
+  r124/U318/Y (OR2X12M)                                   0.20       4.69 r
+  r124/U319/Y (NAND2X12M)                                 0.09       4.78 f
+  r124/U153/Y (CLKNAND2X16M)                              0.09       4.87 r
+  r124/U609/Y (NAND2X12M)                                 0.11       4.99 f
+  r124/U2158/Y (AOI21X8M)                                 0.27       5.25 r
+  r124/U2157/Y (OAI21X8M)                                 0.15       5.41 f
+  r124/U1279/Y (NAND2X12M)                                0.15       5.56 r
+  r124/U114/Y (NAND2X12M)                                 0.10       5.66 f
+  r124/U2115/Y (NAND2X12M)                                0.15       5.81 r
+  r124/U1029/Y (BUFX32M)                                  0.19       6.00 r
+  r124/U270/Y (NAND2BX12M)                                0.10       6.10 f
+  r124/U477/Y (NAND2X12M)                                 0.20       6.30 r
+  r124/U1357/Y (NAND2X12M)                                0.12       6.41 f
+  r124/U1356/Y (CLKNAND2X16M)                             0.18       6.59 r
+  r124/U619/Y (NAND2X8M)                                  0.13       6.72 f
+  r124/U154/Y (CLKNAND2X16M)                              0.15       6.87 r
+  r124/U587/Y (AND2X12M)                                  0.18       7.05 r
+  r124/U1306/Y (NAND2BX12M)                               0.18       7.23 r
+  r124/U536/Y (CLKNAND2X8M)                               0.17       7.40 f
+  r124/U535/Y (NAND2X4M)                                  0.20       7.61 r
+  r124/U534/Y (XOR2X8M)                                   0.37       7.98 r
+  r124/SUM[139] (Modular_Inverse_DW01_add_4)              0.00       7.98 r
+  sub_0_root_add_108/A[139] (Modular_Inverse_DW01_sub_17)     0.00     7.98 r
+  sub_0_root_add_108/U14/Y (NAND2BX8M)                    0.40       8.37 r
+  sub_0_root_add_108/U1539/Y (NAND4X12M)                  0.29       8.66 f
+  sub_0_root_add_108/U1376/Y (CLKINVX16M)                 0.18       8.84 r
+  sub_0_root_add_108/U1413/Y (NAND4X12M)                  0.31       9.15 f
+  sub_0_root_add_108/U710/Y (CLKINVX16M)                  0.14       9.29 r
+  sub_0_root_add_108/U257/Y (NAND2X8M)                    0.10       9.39 f
+  sub_0_root_add_108/U256/Y (NOR2X5M)                     0.25       9.64 r
+  sub_0_root_add_108/U2220/Y (AO21X8M)                    0.25       9.89 r
+  sub_0_root_add_108/U2112/Y (BUFX32M)                    0.19      10.09 r
+  sub_0_root_add_108/U1415/Y (AOI2B1X8M)                  0.17      10.25 f
+  sub_0_root_add_108/U178/Y (OAI21X8M)                    0.24      10.50 r
+  sub_0_root_add_108/U1411/Y (AO21X8M)                    0.33      10.83 r
+  sub_0_root_add_108/U1114/Y (NAND2BX12M)                 0.12      10.95 f
+  sub_0_root_add_108/U1154/Y (NAND2BX12M)                 0.19      11.13 r
+  sub_0_root_add_108/U1085/Y (CLKAND2X16M)                0.21      11.34 r
+  sub_0_root_add_108/U1523/Y (OR2X12M)                    0.24      11.58 r
+  sub_0_root_add_108/U1357/Y (NAND2BX12M)                 0.11      11.70 f
+  sub_0_root_add_108/U1129/Y (NAND2BX12M)                 0.15      11.85 r
+  sub_0_root_add_108/U646/Y (NAND2X12M)                   0.10      11.95 f
+  sub_0_root_add_108/U531/Y (NAND2X12M)                   0.17      12.12 r
+  sub_0_root_add_108/U2162/Y (AO21X8M)                    0.29      12.41 r
+  sub_0_root_add_108/U10/Y (XNOR2X8M)                     0.12      12.53 f
+  sub_0_root_add_108/DIFF[206] (Modular_Inverse_DW01_sub_17)     0.00    12.53 f
+  U5381/Y (AOI222X4M)                                     0.54      13.07 r
+  U5387/Y (OAI221X4M)                                     0.37      13.44 f
+  y_reg[206]/D (DFFQX1M)                                  0.00      13.44 f
+  data arrival time                                                 13.44
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  y_reg[206]/CK (DFFQX1M)                                 0.00      13.50 r
+  library setup time                                     -0.06      13.44
+  data required time                                                13.44
+  --------------------------------------------------------------------------
+  data required time                                                13.44
+  data arrival time                                                -13.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[3] (input port clocked by CLK)
+  Endpoint: y_reg[123] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 f
+  i_p[3] (in)                                             0.05       3.05 f
+  r124/B[3] (Modular_Inverse_DW01_add_4)                  0.00       3.05 f
+  r124/U2214/Y (OR2X12M)                                  0.24       3.29 f
+  r124/U305/Y (NAND2X12M)                                 0.19       3.48 r
+  r124/U389/Y (NAND2X4M)                                  0.16       3.64 f
+  r124/U1114/Y (OA21X8M)                                  0.34       3.98 f
+  r124/U1436/Y (NAND4BX4M)                                0.33       4.31 f
+  r124/U112/Y (NAND3X6M)                                  0.24       4.55 r
+  r124/U2123/Y (AO21X8M)                                  0.32       4.88 r
+  r124/U23/Y (NAND2X6M)                                   0.20       5.08 f
+  r124/U1415/Y (OAI2BB1X4M)                               0.39       5.47 f
+  r124/U1209/Y (XOR2X4M)                                  0.54       6.00 r
+  r124/SUM[33] (Modular_Inverse_DW01_add_4)               0.00       6.00 r
+  sub_0_root_add_108/A[33] (Modular_Inverse_DW01_sub_17)     0.00     6.00 r
+  sub_0_root_add_108/U2081/Y (NAND2BX2M)                  0.76       6.76 f
+  sub_0_root_add_108/U1491/Y (NAND2X8M)                   0.30       7.07 r
+  sub_0_root_add_108/U1545/Y (NAND3X6M)                   0.19       7.26 f
+  sub_0_root_add_108/U1544/Y (NAND2BX8M)                  0.25       7.51 r
+  sub_0_root_add_108/U814/Y (NAND3X4M)                    0.21       7.72 f
+  sub_0_root_add_108/U1166/Y (AO21X8M)                    0.30       8.02 f
+  sub_0_root_add_108/U1165/Y (AOI2BB1X8M)                 0.25       8.27 f
+  sub_0_root_add_108/U1301/Y (NAND2X12M)                  0.21       8.49 r
+  sub_0_root_add_108/U2234/Y (NAND3X12M)                  0.16       8.65 f
+  sub_0_root_add_108/U2233/Y (NAND3X12M)                  0.23       8.87 r
+  sub_0_root_add_108/U2232/Y (NAND3X12M)                  0.16       9.04 f
+  sub_0_root_add_108/U2231/Y (NAND3X12M)                  0.21       9.25 r
+  sub_0_root_add_108/U2230/Y (NAND3X12M)                  0.21       9.46 f
+  sub_0_root_add_108/U1202/Y (NAND3X12M)                  0.26       9.72 r
+  sub_0_root_add_108/U1215/Y (NAND2X3M)                   0.24       9.96 f
+  sub_0_root_add_108/U348/Y (NAND2X6M)                    0.32      10.28 r
+  sub_0_root_add_108/U170/Y (NAND2X8M)                    0.16      10.43 f
+  sub_0_root_add_108/U169/Y (NAND2BX12M)                  0.23      10.66 r
+  sub_0_root_add_108/U621/Y (NAND2X12M)                   0.11      10.77 f
+  sub_0_root_add_108/U1440/Y (NAND2X12M)                  0.18      10.95 r
+  sub_0_root_add_108/U1748/Y (NAND2X4M)                   0.16      11.12 f
+  sub_0_root_add_108/U463/Y (NAND2X4M)                    0.29      11.41 r
+  sub_0_root_add_108/U1547/Y (OAI2BB1X4M)                 0.36      11.76 r
+  sub_0_root_add_108/U838/Y (NAND2X2M)                    0.28      12.04 f
+  sub_0_root_add_108/U728/Y (NAND2X2M)                    0.32      12.36 r
+  sub_0_root_add_108/U1233/Y (XOR2X8M)                    0.27      12.63 r
+  sub_0_root_add_108/DIFF[123] (Modular_Inverse_DW01_sub_17)     0.00    12.63 r
+  U5403/Y (CLKNAND2X16M)                                  0.16      12.78 f
+  U4077/Y (AND3X2M)                                       0.33      13.11 f
+  U4076/Y (NAND3X2M)                                      0.28      13.39 r
+  y_reg[123]/D (DFFHQX8M)                                 0.00      13.39 r
+  data arrival time                                                 13.39
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  y_reg[123]/CK (DFFHQX8M)                                0.00      13.50 r
+  library setup time                                     -0.10      13.40
+  data required time                                                13.40
+  --------------------------------------------------------------------------
+  data required time                                                13.40
+  data arrival time                                                -13.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[81] (input port clocked by CLK)
+  Endpoint: x_reg[207] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 f
+  i_p[81] (in)                                            0.05       3.05 f
+  r123/B[81] (Modular_Inverse_DW01_add_5)                 0.00       3.05 f
+  r123/U1530/Y (OR2X12M)                                  0.23       3.28 f
+  r123/U1356/Y (CLKNAND2X16M)                             0.10       3.37 r
+  r123/U1395/Y (NAND3X12M)                                0.12       3.49 f
+  r123/U1714/Y (AOI21BX8M)                                0.41       3.90 r
+  r123/U1371/Y (NOR2X12M)                                 0.10       4.00 f
+  r123/U2295/Y (OAI2B1X8M)                                0.22       4.21 r
+  r123/U2012/Y (AOI21BX8M)                                0.28       4.49 f
+  r123/U1485/Y (OR2X12M)                                  0.17       4.66 f
+  r123/U672/Y (NAND2X12M)                                 0.09       4.75 r
+  r123/U671/Y (CLKAND2X16M)                               0.26       5.01 r
+  r123/U2270/Y (AOI21X8M)                                 0.14       5.15 f
+  r123/U751/Y (NOR2X12M)                                  0.16       5.31 r
+  r123/U1429/Y (OR2X12M)                                  0.18       5.49 r
+  r123/U1370/Y (NAND2X12M)                                0.09       5.58 f
+  r123/U2225/Y (NAND2X12M)                                0.15       5.73 r
+  r123/U1417/Y (NAND2X12M)                                0.11       5.84 f
+  r123/U2215/Y (BUFX32M)                                  0.17       6.01 f
+  r123/U563/Y (NAND2X4M)                                  0.19       6.20 r
+  r123/U355/Y (CLKNAND2X16M)                              0.19       6.40 f
+  r123/U1630/Y (NAND2X8M)                                 0.17       6.56 r
+  r123/U729/Y (CLKNAND2X16M)                              0.15       6.71 f
+  r123/U1915/Y (NAND2X2M)                                 0.27       6.98 r
+  r123/U1914/Y (NAND2X2M)                                 0.26       7.25 f
+  r123/U626/Y (XOR2X4M)                                   0.55       7.80 r
+  r123/SUM[131] (Modular_Inverse_DW01_add_5)              0.00       7.80 r
+  sub_0_root_add_115/A[131] (Modular_Inverse_DW01_sub_16)     0.00     7.80 r
+  sub_0_root_add_115/U1532/Y (NAND2BX2M)                  0.56       8.36 f
+  sub_0_root_add_115/U14/Y (CLKINVX2M)                    0.38       8.73 r
+  sub_0_root_add_115/U1321/Y (AO21X8M)                    0.26       8.99 r
+  sub_0_root_add_115/U1320/Y (AOI2B1X8M)                  0.13       9.13 f
+  sub_0_root_add_115/U1319/Y (OAI21X8M)                   0.27       9.40 r
+  sub_0_root_add_115/U120/Y (NAND2X12M)                   0.11       9.51 f
+  sub_0_root_add_115/U1316/Y (AO21X8M)                    0.30       9.81 f
+  sub_0_root_add_115/U54/Y (AND2X12M)                     0.17       9.98 f
+  sub_0_root_add_115/U802/Y (NAND3X12M)                   0.14      10.12 r
+  sub_0_root_add_115/U1274/Y (OR2X12M)                    0.24      10.36 r
+  sub_0_root_add_115/U1279/Y (AOI2B1X8M)                  0.18      10.54 f
+  sub_0_root_add_115/U1093/Y (OAI21BX8M)                  0.27      10.80 r
+  sub_0_root_add_115/U1477/Y (AO21X8M)                    0.34      11.14 r
+  sub_0_root_add_115/U145/Y (NAND2X12M)                   0.12      11.26 f
+  sub_0_root_add_115/U1625/Y (NAND2BX12M)                 0.22      11.48 r
+  sub_0_root_add_115/U1423/Y (CLKNAND2X16M)               0.15      11.63 f
+  sub_0_root_add_115/U1441/Y (NAND2X12M)                  0.19      11.82 r
+  sub_0_root_add_115/U1440/Y (NAND2BX8M)                  0.13      11.95 f
+  sub_0_root_add_115/U806/Y (NAND2BX12M)                  0.16      12.11 r
+  sub_0_root_add_115/U727/Y (NAND2X12M)                   0.11      12.22 f
+  sub_0_root_add_115/U94/Y (CLKNAND2X16M)                 0.14      12.36 r
+  sub_0_root_add_115/U1645/Y (AO21X8M)                    0.28      12.64 r
+  sub_0_root_add_115/U181/Y (NAND2X12M)                   0.11      12.75 f
+  sub_0_root_add_115/U74/Y (NAND2X12M)                    0.13      12.88 r
+  sub_0_root_add_115/U1414/Y (XOR2X8M)                    0.12      13.00 f
+  sub_0_root_add_115/DIFF[207] (Modular_Inverse_DW01_sub_16)     0.00    13.00 f
+  U5316/Y (AO22X8M)                                       0.31      13.31 f
+  U4174/Y (NAND2BX12M)                                    0.16      13.48 f
+  x_reg[207]/D (DFFQX2M)                                  0.00      13.48 f
+  data arrival time                                                 13.48
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  x_reg[207]/CK (DFFQX2M)                                 0.00      13.50 r
+  library setup time                                     -0.02      13.48
+  data required time                                                13.48
+  --------------------------------------------------------------------------
+  data required time                                                13.48
+  data arrival time                                                -13.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[81] (input port clocked by CLK)
+  Endpoint: x_reg[249] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[81] (in)                                            0.08       3.08 r
+  r123/B[81] (Modular_Inverse_DW01_add_5)                 0.00       3.08 r
+  r123/U1530/Y (OR2X12M)                                  0.24       3.32 r
+  r123/U1356/Y (CLKNAND2X16M)                             0.14       3.46 f
+  r123/U1395/Y (NAND3X12M)                                0.13       3.59 r
+  r123/U1714/Y (AOI21BX8M)                                0.31       3.91 f
+  r123/U1371/Y (NOR2X12M)                                 0.18       4.08 r
+  r123/U2295/Y (OAI2B1X8M)                                0.12       4.20 f
+  r123/U2012/Y (AOI21BX8M)                                0.28       4.48 r
+  r123/U1485/Y (OR2X12M)                                  0.16       4.64 r
+  r123/U672/Y (NAND2X12M)                                 0.08       4.72 f
+  r123/U671/Y (CLKAND2X16M)                               0.25       4.97 f
+  r123/U2270/Y (AOI21X8M)                                 0.28       5.24 r
+  r123/U751/Y (NOR2X12M)                                  0.10       5.34 f
+  r123/U1429/Y (OR2X12M)                                  0.18       5.52 f
+  r123/U1370/Y (NAND2X12M)                                0.11       5.63 r
+  r123/U2225/Y (NAND2X12M)                                0.11       5.74 f
+  r123/U1417/Y (NAND2X12M)                                0.15       5.89 r
+  r123/U2215/Y (BUFX32M)                                  0.18       6.07 r
+  r123/U53/Y (NAND2X12M)                                  0.10       6.17 f
+  r123/U789/Y (NAND2X12M)                                 0.22       6.39 r
+  r123/U8/Y (NAND2X4M)                                    0.21       6.60 f
+  r123/U679/Y (NAND2X12M)                                 0.20       6.80 r
+  r123/U2241/Y (AO21X8M)                                  0.25       7.05 r
+  r123/U1202/Y (XOR2X4M)                                  0.49       7.54 r
+  r123/SUM[194] (Modular_Inverse_DW01_add_5)              0.00       7.54 r
+  sub_0_root_add_115/A[194] (Modular_Inverse_DW01_sub_16)     0.00     7.54 r
+  sub_0_root_add_115/U1113/Y (NAND2BX4M)                  0.60       8.14 r
+  sub_0_root_add_115/U1348/Y (NAND4X2M)                   0.88       9.03 f
+  sub_0_root_add_115/U38/Y (INVX6M)                       0.61       9.64 r
+  sub_0_root_add_115/U940/Y (INVX2M)                      0.28       9.92 f
+  sub_0_root_add_115/U1179/Y (OR4X12M)                    0.37      10.29 f
+  sub_0_root_add_115/U104/Y (CLKINVX32M)                  0.09      10.38 r
+  sub_0_root_add_115/U91/Y (NAND2X12M)                    0.08      10.46 f
+  sub_0_root_add_115/U1346/Y (NAND4X12M)                  0.21      10.67 r
+  sub_0_root_add_115/U639/Y (OR2X12M)                     0.27      10.94 r
+  sub_0_root_add_115/U1338/Y (NAND3X12M)                  0.14      11.08 f
+  sub_0_root_add_115/U637/Y (AND3X12M)                    0.31      11.39 f
+  sub_0_root_add_115/U1199/Y (NOR2X12M)                   0.22      11.62 r
+  sub_0_root_add_115/U206/Y (INVX24M)                     0.11      11.73 f
+  sub_0_root_add_115/U773/Y (NAND2X4M)                    0.25      11.99 r
+  sub_0_root_add_115/U1286/Y (NAND2X6M)                   0.16      12.15 f
+  sub_0_root_add_115/U621/Y (NAND2X4M)                    0.18      12.33 r
+  sub_0_root_add_115/U1894/Y (CLKXOR2X2M)                 0.46      12.79 f
+  sub_0_root_add_115/DIFF[249] (Modular_Inverse_DW01_sub_16)     0.00    12.79 f
+  U5537/Y (AO22X4M)                                       0.39      13.18 f
+  U4207/Y (NAND2BX4M)                                     0.23      13.41 f
+  x_reg[249]/D (DFFHQX8M)                                 0.00      13.41 f
+  data arrival time                                                 13.41
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  x_reg[249]/CK (DFFHQX8M)                                0.00      13.50 r
+  library setup time                                     -0.09      13.41
+  data required time                                                13.41
+  --------------------------------------------------------------------------
+  data required time                                                13.41
+  data arrival time                                                -13.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[81] (input port clocked by CLK)
+  Endpoint: x_reg[254] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[81] (in)                                            0.08       3.08 r
+  r123/B[81] (Modular_Inverse_DW01_add_5)                 0.00       3.08 r
+  r123/U1530/Y (OR2X12M)                                  0.24       3.32 r
+  r123/U1356/Y (CLKNAND2X16M)                             0.14       3.46 f
+  r123/U1395/Y (NAND3X12M)                                0.13       3.59 r
+  r123/U1714/Y (AOI21BX8M)                                0.31       3.91 f
+  r123/U1371/Y (NOR2X12M)                                 0.18       4.08 r
+  r123/U2295/Y (OAI2B1X8M)                                0.12       4.20 f
+  r123/U2012/Y (AOI21BX8M)                                0.28       4.48 r
+  r123/U1485/Y (OR2X12M)                                  0.16       4.64 r
+  r123/U672/Y (NAND2X12M)                                 0.08       4.72 f
+  r123/U671/Y (CLKAND2X16M)                               0.25       4.97 f
+  r123/U2270/Y (AOI21X8M)                                 0.28       5.24 r
+  r123/U751/Y (NOR2X12M)                                  0.10       5.34 f
+  r123/U1429/Y (OR2X12M)                                  0.18       5.52 f
+  r123/U1370/Y (NAND2X12M)                                0.11       5.63 r
+  r123/U2225/Y (NAND2X12M)                                0.11       5.74 f
+  r123/U1417/Y (NAND2X12M)                                0.15       5.89 r
+  r123/U2215/Y (BUFX32M)                                  0.18       6.07 r
+  r123/U53/Y (NAND2X12M)                                  0.10       6.17 f
+  r123/U789/Y (NAND2X12M)                                 0.22       6.39 r
+  r123/U8/Y (NAND2X4M)                                    0.21       6.60 f
+  r123/U679/Y (NAND2X12M)                                 0.20       6.80 r
+  r123/U2241/Y (AO21X8M)                                  0.25       7.05 r
+  r123/U1202/Y (XOR2X4M)                                  0.49       7.54 r
+  r123/SUM[194] (Modular_Inverse_DW01_add_5)              0.00       7.54 r
+  sub_0_root_add_115/A[194] (Modular_Inverse_DW01_sub_16)     0.00     7.54 r
+  sub_0_root_add_115/U1113/Y (NAND2BX4M)                  0.60       8.14 r
+  sub_0_root_add_115/U1348/Y (NAND4X2M)                   0.88       9.03 f
+  sub_0_root_add_115/U38/Y (INVX6M)                       0.61       9.64 r
+  sub_0_root_add_115/U940/Y (INVX2M)                      0.28       9.92 f
+  sub_0_root_add_115/U1179/Y (OR4X12M)                    0.37      10.29 f
+  sub_0_root_add_115/U104/Y (CLKINVX32M)                  0.09      10.38 r
+  sub_0_root_add_115/U91/Y (NAND2X12M)                    0.08      10.46 f
+  sub_0_root_add_115/U1346/Y (NAND4X12M)                  0.21      10.67 r
+  sub_0_root_add_115/U639/Y (OR2X12M)                     0.27      10.94 r
+  sub_0_root_add_115/U1338/Y (NAND3X12M)                  0.14      11.08 f
+  sub_0_root_add_115/U637/Y (AND3X12M)                    0.31      11.39 f
+  sub_0_root_add_115/U1199/Y (NOR2X12M)                   0.22      11.62 r
+  sub_0_root_add_115/U206/Y (INVX24M)                     0.11      11.73 f
+  sub_0_root_add_115/U1149/Y (CLKNAND2X16M)               0.09      11.82 r
+  sub_0_root_add_115/U1363/Y (AO21X8M)                    0.20      12.02 r
+  sub_0_root_add_115/U172/Y (NAND2X12M)                   0.09      12.11 f
+  sub_0_root_add_115/U163/Y (NAND2X12M)                   0.18      12.29 r
+  sub_0_root_add_115/U710/Y (NAND2X8M)                    0.13      12.43 f
+  sub_0_root_add_115/U1364/Y (NAND3X12M)                  0.19      12.62 r
+  sub_0_root_add_115/U810/Y (XNOR2X4M)                    0.28      12.90 r
+  sub_0_root_add_115/DIFF[254] (Modular_Inverse_DW01_sub_16)     0.00    12.90 r
+  U3904/Y (NAND2X6M)                                      0.18      13.07 f
+  U3903/Y (AND3X6M)                                       0.26      13.33 f
+  U4263/Y (NAND2BX12M)                                    0.10      13.44 r
+  x_reg[254]/D (DFFHQX8M)                                 0.00      13.44 r
+  data arrival time                                                 13.44
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  x_reg[254]/CK (DFFHQX8M)                                0.00      13.50 r
+  library setup time                                     -0.06      13.44
+  data required time                                                13.44
+  --------------------------------------------------------------------------
+  data required time                                                13.44
+  data arrival time                                                -13.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[81] (input port clocked by CLK)
+  Endpoint: x_reg[253] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[81] (in)                                            0.08       3.08 r
+  r123/B[81] (Modular_Inverse_DW01_add_5)                 0.00       3.08 r
+  r123/U1530/Y (OR2X12M)                                  0.24       3.32 r
+  r123/U1356/Y (CLKNAND2X16M)                             0.14       3.46 f
+  r123/U1395/Y (NAND3X12M)                                0.13       3.59 r
+  r123/U1714/Y (AOI21BX8M)                                0.31       3.91 f
+  r123/U1371/Y (NOR2X12M)                                 0.18       4.08 r
+  r123/U2295/Y (OAI2B1X8M)                                0.12       4.20 f
+  r123/U2012/Y (AOI21BX8M)                                0.28       4.48 r
+  r123/U1485/Y (OR2X12M)                                  0.16       4.64 r
+  r123/U672/Y (NAND2X12M)                                 0.08       4.72 f
+  r123/U671/Y (CLKAND2X16M)                               0.25       4.97 f
+  r123/U2270/Y (AOI21X8M)                                 0.28       5.24 r
+  r123/U751/Y (NOR2X12M)                                  0.10       5.34 f
+  r123/U1429/Y (OR2X12M)                                  0.18       5.52 f
+  r123/U1370/Y (NAND2X12M)                                0.11       5.63 r
+  r123/U2225/Y (NAND2X12M)                                0.11       5.74 f
+  r123/U1417/Y (NAND2X12M)                                0.15       5.89 r
+  r123/U2215/Y (BUFX32M)                                  0.18       6.07 r
+  r123/U53/Y (NAND2X12M)                                  0.10       6.17 f
+  r123/U789/Y (NAND2X12M)                                 0.22       6.39 r
+  r123/U8/Y (NAND2X4M)                                    0.21       6.60 f
+  r123/U679/Y (NAND2X12M)                                 0.20       6.80 r
+  r123/U2241/Y (AO21X8M)                                  0.25       7.05 r
+  r123/U1202/Y (XOR2X4M)                                  0.49       7.54 r
+  r123/SUM[194] (Modular_Inverse_DW01_add_5)              0.00       7.54 r
+  sub_0_root_add_115/A[194] (Modular_Inverse_DW01_sub_16)     0.00     7.54 r
+  sub_0_root_add_115/U1113/Y (NAND2BX4M)                  0.60       8.14 r
+  sub_0_root_add_115/U1348/Y (NAND4X2M)                   0.88       9.03 f
+  sub_0_root_add_115/U38/Y (INVX6M)                       0.61       9.64 r
+  sub_0_root_add_115/U940/Y (INVX2M)                      0.28       9.92 f
+  sub_0_root_add_115/U1179/Y (OR4X12M)                    0.37      10.29 f
+  sub_0_root_add_115/U104/Y (CLKINVX32M)                  0.09      10.38 r
+  sub_0_root_add_115/U91/Y (NAND2X12M)                    0.08      10.46 f
+  sub_0_root_add_115/U1346/Y (NAND4X12M)                  0.21      10.67 r
+  sub_0_root_add_115/U639/Y (OR2X12M)                     0.27      10.94 r
+  sub_0_root_add_115/U1338/Y (NAND3X12M)                  0.14      11.08 f
+  sub_0_root_add_115/U637/Y (AND3X12M)                    0.31      11.39 f
+  sub_0_root_add_115/U1199/Y (NOR2X12M)                   0.22      11.62 r
+  sub_0_root_add_115/U206/Y (INVX24M)                     0.11      11.73 f
+  sub_0_root_add_115/U1149/Y (CLKNAND2X16M)               0.09      11.82 r
+  sub_0_root_add_115/U1363/Y (AO21X8M)                    0.20      12.02 r
+  sub_0_root_add_115/U172/Y (NAND2X12M)                   0.09      12.11 f
+  sub_0_root_add_115/U163/Y (NAND2X12M)                   0.18      12.29 r
+  sub_0_root_add_115/U1252/Y (XNOR2X1M)                   0.50      12.79 r
+  sub_0_root_add_115/DIFF[253] (Modular_Inverse_DW01_sub_16)     0.00    12.79 r
+  U4146/Y (AO22X4M)                                       0.40      13.20 r
+  U4521/Y (NAND2BX4M)                                     0.21      13.41 r
+  x_reg[253]/D (DFFHQX8M)                                 0.00      13.41 r
+  data arrival time                                                 13.41
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  x_reg[253]/CK (DFFHQX8M)                                0.00      13.50 r
+  library setup time                                     -0.09      13.41
+  data required time                                                13.41
+  --------------------------------------------------------------------------
+  data required time                                                13.41
+  data arrival time                                                -13.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[17] (input port clocked by CLK)
+  Endpoint: x_reg[135] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 r
+  i_p[17] (in)                                            0.08       3.08 r
+  r123/B[17] (Modular_Inverse_DW01_add_5)                 0.00       3.08 r
+  r123/U307/Y (OR2X12M)                                   0.30       3.39 r
+  r123/U162/Y (NAND2X6M)                                  0.15       3.54 f
+  r123/U306/Y (INVX4M)                                    0.17       3.70 r
+  r123/U305/Y (NAND2X6M)                                  0.15       3.85 f
+  r123/U433/Y (NAND3X12M)                                 0.17       4.01 r
+  r123/U651/Y (AND3X4M)                                   0.29       4.31 r
+  r123/U1381/Y (NAND2X6M)                                 0.15       4.46 f
+  r123/U1368/Y (NAND2X12M)                                0.16       4.61 r
+  r123/U1420/Y (NAND2X12M)                                0.15       4.77 f
+  r123/U33/Y (INVX8M)                                     0.13       4.90 r
+  r123/U1384/Y (OAI21X8M)                                 0.13       5.02 f
+  r123/U814/Y (NAND2X12M)                                 0.13       5.15 r
+  r123/U816/Y (CLKNAND2X16M)                              0.20       5.35 f
+  r123/U1326/Y (NAND2X12M)                                0.18       5.53 r
+  r123/U2280/Y (AO21X8M)                                  0.24       5.77 r
+  r123/U1167/Y (CLKINVX32M)                               0.10       5.87 f
+  r123/U683/Y (INVX32M)                                   0.12       5.99 r
+  r123/U893/Y (NAND2X5M)                                  0.13       6.12 f
+  r123/U153/Y (CLKAND2X16M)                               0.19       6.31 f
+  r123/U152/Y (NAND2X12M)                                 0.18       6.49 r
+  r123/U1321/Y (XNOR2X4M)                                 0.50       6.99 r
+  r123/SUM[100] (Modular_Inverse_DW01_add_5)              0.00       6.99 r
+  sub_0_root_add_115/A[100] (Modular_Inverse_DW01_sub_16)     0.00     6.99 r
+  sub_0_root_add_115/U985/Y (NAND2BX2M)                   0.81       7.80 f
+  sub_0_root_add_115/U1970/Y (NAND2X2M)                   0.47       8.26 r
+  sub_0_root_add_115/U1948/Y (NAND3X2M)                   0.37       8.63 f
+  sub_0_root_add_115/U1630/Y (AO21X8M)                    0.41       9.04 f
+  sub_0_root_add_115/U767/Y (INVX12M)                     0.10       9.15 r
+  sub_0_root_add_115/U1387/Y (AOI2B1X8M)                  0.07       9.21 f
+  sub_0_root_add_115/U297/Y (OAI21X8M)                    0.25       9.46 r
+  sub_0_root_add_115/U1241/Y (AO21X8M)                    0.31       9.77 r
+  sub_0_root_add_115/U252/Y (CLKNAND2X16M)                0.20       9.96 f
+  sub_0_root_add_115/U702/Y (INVX6M)                      0.16      10.12 r
+  sub_0_root_add_115/U1195/Y (AOI2B1X8M)                  0.09      10.21 f
+  sub_0_root_add_115/U724/Y (NOR2X12M)                    0.17      10.39 r
+  sub_0_root_add_115/U769/Y (OR2X12M)                     0.23      10.62 r
+  sub_0_root_add_115/U1626/Y (AO21X8M)                    0.30      10.92 r
+  sub_0_root_add_115/U1075/Y (NAND2X2M)                   0.27      11.19 f
+  sub_0_root_add_115/U607/Y (NAND2X4M)                    0.34      11.53 r
+  sub_0_root_add_115/U726/Y (NAND2X6M)                    0.17      11.70 f
+  sub_0_root_add_115/U725/Y (NAND2X4M)                    0.27      11.97 r
+  sub_0_root_add_115/U1884/Y (NAND2X2M)                   0.28      12.24 f
+  sub_0_root_add_115/U1883/Y (NAND2X2M)                   0.32      12.56 r
+  sub_0_root_add_115/U1255/Y (XOR2X8M)                    0.23      12.79 r
+  sub_0_root_add_115/DIFF[135] (Modular_Inverse_DW01_sub_16)     0.00    12.79 r
+  U4112/Y (AO22X4M)                                       0.30      13.09 r
+  U7356/Y (NAND2BX2M)                                     0.30      13.39 r
+  x_reg[135]/D (DFFHQX8M)                                 0.00      13.39 r
+  data arrival time                                                 13.39
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  x_reg[135]/CK (DFFHQX8M)                                0.00      13.50 r
+  library setup time                                     -0.10      13.40
+  data required time                                                13.40
+  --------------------------------------------------------------------------
+  data required time                                                13.40
+  data arrival time                                                -13.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i_p[3] (input port clocked by CLK)
+  Endpoint: y_reg[83] (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Modular_Inverse    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    3.00       3.00 f
+  i_p[3] (in)                                             0.05       3.05 f
+  r124/B[3] (Modular_Inverse_DW01_add_4)                  0.00       3.05 f
+  r124/U2214/Y (OR2X12M)                                  0.24       3.29 f
+  r124/U305/Y (NAND2X12M)                                 0.19       3.48 r
+  r124/U389/Y (NAND2X4M)                                  0.16       3.64 f
+  r124/U1114/Y (OA21X8M)                                  0.34       3.98 f
+  r124/U1436/Y (NAND4BX4M)                                0.33       4.31 f
+  r124/U112/Y (NAND3X6M)                                  0.24       4.55 r
+  r124/U2123/Y (AO21X8M)                                  0.32       4.88 r
+  r124/U23/Y (NAND2X6M)                                   0.20       5.08 f
+  r124/U1415/Y (OAI2BB1X4M)                               0.39       5.47 f
+  r124/U1209/Y (XOR2X4M)                                  0.54       6.00 r
+  r124/SUM[33] (Modular_Inverse_DW01_add_4)               0.00       6.00 r
+  sub_0_root_add_108/A[33] (Modular_Inverse_DW01_sub_17)     0.00     6.00 r
+  sub_0_root_add_108/U2081/Y (NAND2BX2M)                  0.76       6.76 f
+  sub_0_root_add_108/U1491/Y (NAND2X8M)                   0.30       7.07 r
+  sub_0_root_add_108/U1545/Y (NAND3X6M)                   0.19       7.26 f
+  sub_0_root_add_108/U1544/Y (NAND2BX8M)                  0.25       7.51 r
+  sub_0_root_add_108/U814/Y (NAND3X4M)                    0.21       7.72 f
+  sub_0_root_add_108/U1166/Y (AO21X8M)                    0.30       8.02 f
+  sub_0_root_add_108/U1165/Y (AOI2BB1X8M)                 0.25       8.27 f
+  sub_0_root_add_108/U1301/Y (NAND2X12M)                  0.21       8.49 r
+  sub_0_root_add_108/U2234/Y (NAND3X12M)                  0.16       8.65 f
+  sub_0_root_add_108/U2233/Y (NAND3X12M)                  0.23       8.87 r
+  sub_0_root_add_108/U2232/Y (NAND3X12M)                  0.16       9.04 f
+  sub_0_root_add_108/U2231/Y (NAND3X12M)                  0.21       9.25 r
+  sub_0_root_add_108/U898/Y (BUFX2M)                      0.47       9.72 r
+  sub_0_root_add_108/U900/Y (NAND2X2M)                    0.31      10.03 f
+  sub_0_root_add_108/U899/Y (NAND2X2M)                    0.49      10.53 r
+  sub_0_root_add_108/U1829/Y (NAND2X2M)                   0.35      10.88 f
+  sub_0_root_add_108/U1828/Y (NAND2X2M)                   0.48      11.35 r
+  sub_0_root_add_108/U1132/Y (NAND2X2M)                   0.35      11.70 f
+  sub_0_root_add_108/U1131/Y (NAND2X2M)                   0.31      12.02 r
+  sub_0_root_add_108/U509/Y (XOR2X2M)                     0.28      12.29 f
+  sub_0_root_add_108/DIFF[83] (Modular_Inverse_DW01_sub_17)     0.00    12.29 f
+  U4274/Y (AOI222X4M)                                     0.58      12.87 r
+  U4075/Y (OAI221X2M)                                     0.49      13.36 f
+  y_reg[83]/D (DFFHQX8M)                                  0.00      13.36 f
+  data arrival time                                                 13.36
+
+  clock CLK (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  y_reg[83]/CK (DFFHQX8M)                                 0.00      13.50 r
+  library setup time                                     -0.13      13.37
+  data required time                                                13.37
+  --------------------------------------------------------------------------
+  data required time                                                13.37
+  data arrival time                                                -13.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
