@@ -1,4 +1,4 @@
-`include "Modular_Inverse.sv"
+`include "../RTL/Modular_Inverse.sv"
 
 
 ////////////////////////////////////////
